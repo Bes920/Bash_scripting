@@ -1,4 +1,0 @@
-The user is root
-The script ran at Sat Jan  3 11:54:15 AM WAT 2026
-The user is root
-The script ran at Sat Jan  3 11:56:13 AM WAT 2026
