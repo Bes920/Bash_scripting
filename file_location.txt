@@ -1,0 +1,27 @@
+/home/exploitforge/Documents/htb/enum/linpeas.sh
+/home/exploitforge/Documents/htb/pentest in a nutshell/linpeas.sh
+/usr/share/peass/linpeas/linpeas.sh
+/home/exploitforge/Documents/htb/enum/linpeas.sh
+/home/exploitforge/Documents/htb/pentest in a nutshell/linpeas.sh
+/usr/share/peass/linpeas/linpeas.sh
+/home/exploitforge/Documents/htb/enum/linpeas.sh
+/home/exploitforge/Documents/htb/pentest in a nutshell/linpeas.sh
+/usr/share/peass/linpeas/linpeas.sh
+/home/exploitforge/Documents/htb/enum/linpeas.sh
+/home/exploitforge/Documents/htb/pentest in a nutshell/linpeas.sh
+/usr/share/peass/linpeas/linpeas.sh
+/home/exploitforge/Documents/htb/enum/linpeas.sh
+/home/exploitforge/Documents/htb/pentest in a nutshell/linpeas.sh
+/usr/share/peass/linpeas/linpeas.sh
+/home/exploitforge/Documents/htb/enum/linpeas.sh
+/home/exploitforge/Documents/htb/pentest in a nutshell/linpeas.sh
+/usr/share/peass/linpeas/linpeas.sh
+/home/exploitforge/Documents/htb/enum/linpeas.sh
+/home/exploitforge/Documents/htb/pentest in a nutshell/linpeas.sh
+/usr/share/peass/linpeas/linpeas.sh
+/home/exploitforge/Documents/htb/enum/linpeas.sh
+/home/exploitforge/Documents/htb/pentest in a nutshell/linpeas.sh
+/usr/share/peass/linpeas/linpeas.sh
+/home/exploitforge/Documents/htb/enum/linpeas.sh
+/home/exploitforge/Documents/htb/pentest in a nutshell/linpeas.sh
+/usr/share/peass/linpeas/linpeas.sh

@@ -1,0 +1,28 @@
+#!/bin/bash 
+echo "Today we're learning some case statement"
+
+echo " what is your favorite sport"
+echo "1 - football"
+echo "2 - basketball"
+echo "3 - volleyball"
+echo "4 - handball"
+echo "5 - hockey"
+echo "6 - I don't like sport"
+echo  "7 - exit script"
+var=1
+read sport;
+while [ $var -eq 1 ]
+do 
+  case $sport in 
+    1) echo "we play football with our legs";;
+    2) echo "we play basketball with our hands";;
+    3) echo "we play volley ball with our hands but we don't hav to hold the ball";;
+    4) echo "We play handball as football with the only differenece we use our hands";;
+    5) echo "we play hockey on glass with a kind of stick";;
+    6) echo "we understand sport is not your thing";;
+    7) echo "exiting sccript"
+var=2;;
+    *) echo "iinvalid option";; 
+  esac 
+var=2
+done 

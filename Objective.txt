@@ -1,0 +1,17 @@
+In this course we aim in mastering bash this script and at the end of this module I intend tho build my Osinig and Enumeration script 
+class1: Introduction and Welcome # 
+class2: Hello World #
+class3: Variables  #
+class4: Math Functions #
+class5: If Statements #
+class6: Ecit Codes  #
+class7: While Loops #
+class8: Universal Update Script #
+class9: For lops 
+Class10: FIleSysytem location fpr Scripts 
+class11: Data Streams 
+class12: Case Statements
+Class14: Schedulling jobs
+class15: Scheduling jobs 
+class16: creating a Backup Script 
+class18: Closing 

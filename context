@@ -1,0 +1,50 @@
+#!/bin/bash
+
+# Usage: ./context_booster.sh <IP_ADDRESS>
+IP=$1
+API_KEY="YOUR_ABUSEIPDB_API_KEY" 
+REPORT_FILE="report_${IP}.md"
+
+if [ -z "$IP" ]; then
+    echo "Usage: $0 <IP_Address>"
+    exit 1
+fi
+
+echo "--- Generating SOC Report for $IP ---"
+
+{
+    echo "# SOC Context Report: $IP"
+    echo "Date: $(date)"
+    echo "---"
+
+    # 1. WHOIS Lookup
+    echo "## 1. Whois Information"
+    echo "\`\`\`text"
+    # Filtering for the most important bits
+    whois "$IP" | grep -E "NetName|Organization|Country|City|Address" | sed 's/^[[:space:]]*//'
+    echo "\`\`\`"
+
+    # 2. AbuseIPDB API Check (Requires jq)
+    echo "## 2. Reputation (AbuseIPDB)"
+    REPUTATION=$(curl -s -G https://api.abuseipdb.com/api/v2/check \
+      --data-urlencode "ipAddress=$IP" \
+      -d maxAgeInDays=90 \
+      -H "Key: $API_KEY" \
+      -H "Accept: application/json")
+
+    CONFIDENCE=$(echo "$REPUTATION" | jq '.data.abuseConfidenceScore')
+    USAGE=$(echo "$REPUTATION" | jq -r '.data.usageType')
+    
+    echo "* **Abuse Confidence Score:** $CONFIDENCE%"
+    echo "* **Usage Type:** $USAGE"
+    echo ""
+
+    # 3. Quick Nmap Scan
+    echo "## 3. Port Scan (Top 100)"
+    echo "\`\`\`text"
+    nmap -F "$IP" | grep "open" || echo "No common ports open."
+    echo "\`\`\`"
+
+} > "$REPORT_FILE"
+
+echo "Done! Report saved to $REPORT_FILE"

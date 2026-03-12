@@ -1,0 +1,17 @@
+The user is not root
+The user is not root
+The user is not root
+The user is not root
+The script ran at Sat Jan  3 11:47:54 AM WAT 2026
+The user is not root
+The script ran at Sat Jan  3 11:49:00 AM WAT 2026
+The user is not root
+The script ran at Sat Jan  3 11:53:00 AM WAT 2026
+The user is not root
+The script ran at Sat Jan  3 11:55:00 AM WAT 2026
+The user is not root
+The script ran at Sat Jan  3 12:16:49 PM WAT 2026
+The user is not root
+The script ran at Sat Jan  3 12:17:27 PM WAT 2026
+The user is not root
+The script ran at Sat Jan  3 12:19:12 PM WAT 2026
